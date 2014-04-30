@@ -8,7 +8,7 @@
 
 sign(Timestamp, Name, Host) ->
   Secret = ems:get_var(secret_key, Host, undefined),
-  json_session:binary_to_hexbin(crypto:md5(string:join([Timestamp, Name, Secret], "/"))).
+  json_session:binary_to_hexbin(crypto:hash(md5, string:join([Timestamp, Name, Secret], "/"))).
   
 
 check_sign(Name, Timestamp, Hash, Host) ->

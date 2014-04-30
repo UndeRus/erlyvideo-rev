@@ -22,6 +22,7 @@
 %%% along with erlyvideo.  If not, see <http://www.gnu.org/licenses/>.
 %%%
 %%%---------------------------------------------------------------------------------------
+-include_lib("pmod_transform/include/pmod.hrl").
 -module(ems_http).
 -export([start_listener/1, stop/0, handle_http/1, http/4, wwwroot/1, host/1]).
 -include("../log.hrl").

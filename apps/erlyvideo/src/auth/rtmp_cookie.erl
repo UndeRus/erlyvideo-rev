@@ -68,7 +68,7 @@ encode(Session, Secret) when is_list(Session) ->
   <<Json64/binary, "--", Sign/binary>>.
 
 session_sign(Session, Secret) ->
-  ems:binary_to_hexbin(crypto:sha_mac(Secret, Session)).
+  ems:binary_to_hexbin(crypto:hmac(sha, Secret, Session)).
 
 
 verify_signature(_, _, undefined) ->

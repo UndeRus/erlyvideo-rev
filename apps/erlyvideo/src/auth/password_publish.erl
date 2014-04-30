@@ -20,6 +20,7 @@
 %%% along with erlyvideo.  If not, see <http://www.gnu.org/licenses/>.
 %%%
 %%%---------------------------------------------------------------------------------------
+-include_lib("pmod_transform/include/pmod.hrl").
 -module(password_publish, [Login, Password]).
 -author('Max Lapshin <max@maxidoors.ru>').
 -include_lib("../log.hrl").

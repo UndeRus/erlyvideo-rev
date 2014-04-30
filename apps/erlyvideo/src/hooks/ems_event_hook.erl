@@ -20,6 +20,7 @@
 %%% along with erlyvideo.  If not, see <http://www.gnu.org/licenses/>.
 %%%
 %%%---------------------------------------------------------------------------------------
+-include_lib("pmod_transform/include/pmod.hrl").
 -module(ems_event_hook).
 -author('Max Lapshin <max@maxidoors.ru>').
 -behaviour(gen_event).

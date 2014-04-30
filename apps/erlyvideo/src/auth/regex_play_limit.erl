@@ -20,6 +20,7 @@
 %%% along with erlyvideo.  If not, see <http://www.gnu.org/licenses/>.
 %%%
 %%%---------------------------------------------------------------------------------------
+-include_lib("pmod_transform/include/pmod.hrl").
 -module(regex_play_limit, [Regex, Count]).
 -author('Max Lapshin <max@maxidoors.ru>').
 -include_lib("rtmp/include/rtmp.hrl").

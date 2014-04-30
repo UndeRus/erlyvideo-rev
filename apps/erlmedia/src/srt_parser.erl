@@ -28,6 +28,8 @@
 %% External API
 -export([parse/1]).
 
+-compile({no_auto_import,[binary_to_integer/1]}). %% TODO: rename function to not clash with BIF's
+
 -define(NewLine, "\r\n|\r|\n").
 -define(EmptyLine, "\r\n\s*\r+\n+|\r\s*\r+|\n\s*\n+").
 
